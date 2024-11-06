@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Educación Física</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/iconos/ico2.ico">
+</head>
+<body>
+    <header>
+	<nav id="menu">
+           <ul id="lista-menu">
+             <a href="index.html" class="enlace-menu"><li class="menu-item">Inicio</li></a>
+	     <a href="campamento.html" class="enlace-menu"><li class="menu-item">Campamento</li></a>
+	     <a href="recreacion.html" class="enlace-menu"><li class="menu-item">Recreación</li></a>
+	     <a href="atletismo.html" class="enlace-menu"><li class="menu-item">Atletismo</li></a>
+            	
+           </ul>
+        </nav>
+    </header>
+    <h1 id="titulo2">CAMPAMENTO</h1>
+    <p id="descripcion3">La materia de "Campamento" en la modalidad de Educación Física del grado 11 en el Colegio INEM Francisco de Paula Santander es una asignatura dinámica y práctica que busca conectar a los estudiantes con la naturaleza y desarrollar habilidades fundamentales para la vida al aire libre. Esta materia está diseñada para que los estudiantes adquieran conocimientos y competencias en actividades relacionadas con el campismo, la supervivencia en entornos naturales, y el trabajo en equipo.
+
+A lo largo de esta asignatura, los estudiantes aprenden técnicas esenciales de campamento, como la instalación de tiendas de campaña, la construcción de refugios improvisados, la orientación y navegación con mapas y brújulas, y la preparación de alimentos en condiciones de campamento. Además, se les instruye en primeros auxilios básicos y medidas de seguridad para enfrentar situaciones de emergencia en entornos naturales.
+
+"Campamento" no solo fomenta el desarrollo de habilidades prácticas, sino que también promueve el fortalecimiento de valores como la cooperación, la responsabilidad, el respeto por el medio ambiente y la autosuficiencia. Los estudiantes experimentan de primera mano la importancia del trabajo en equipo, la planificación y la toma de decisiones en situaciones reales, lo que les prepara para enfrentar desafíos tanto en la naturaleza como en su vida diaria.
+
+Esta materia también sirve como un espacio para que los estudiantes desconecten de las rutinas cotidianas y se conecten con la naturaleza, comprendiendo la importancia de la conservación del entorno y el impacto que sus acciones pueden tener en el ecosistema. A través de experiencias prácticas y actividades grupales, "Campamento" se convierte en una oportunidad única para que los estudiantes adquieran una mayor conciencia ambiental y desarrollen un amor por la vida al aire libre que les acompañará más allá de su etapa escolar.</p>	
+
+     <div id="contenedor-2">
+    <div class="contenedor-imagen">
+         <a href="El Cocuy.html" target="_blank">
+        <h3>El Cocuy</h3>
+        <div id="contenedor-9"></div>
+          </a>
+    </div>
+    <div class="contenedor-imagen">
+          <a href="viota.html" target="_blank">
+        <h3>Viota</h3>
+        <div id="contenedor-10"></div>
+          </a>
+    </div>
+</div>
+<!-- Burbuja de contacto -->
+    <div class="burbuja-contacto" id="burbuja-contacto" onclick="toggleForm()">
+        <img src="./img/co.png" alt="Icono de contacto">
+    </div>
+
+    <!-- Formulario emergente -->
+    <div class="formulario-contacto" id="formulario-contacto">
+        <form action="enviar.php" method="POST">
+            <h2>Contáctanos</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <script>
+        function toggleForm() {
+            var formulario = document.getElementById("formulario-contacto");
+            formulario.classList.toggle("activo");
+        }
+    </script>
+
+</body>
+</html>

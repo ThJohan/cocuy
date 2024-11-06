@@ -1,0 +1,81 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+p, ul {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #4CAF50;
+}
+
+main {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+}
+
+
+.imagen-circular img {
+    width: 350px;      /* Ajusta el tamaño de la imagen */
+    height: 350px;     /* Asegúrate de que el alto y el ancho sean iguales */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover;  /* Ajusta la imagen dentro del contenedor circular */
+    border: 3px solid green; /* Añade un borde si lo deseas */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+footer {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

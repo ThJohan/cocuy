@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Educación Física</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/iconos/ico1.ico">
+</head>
+<body>
+    <header>
+	<nav id="menu">
+           <ul id="lista-menu">
+             <a href="index.html" class="enlace-menu"><li class="menu-item">Inicio</li></a>
+	     <a href="campamento.html" class="enlace-menu"><li class="menu-item">Campamento</li></a>
+	     <a href="recreacion.html" class="enlace-menu"><li class="menu-item">Recreación</li></a>
+	     <a href="atletismo.html" class="enlace-menu"><li class="menu-item">Atletismo</li></a>
+             	
+           </ul>
+        </nav>
+    </header>
+    <h1 id="titulo">MODALIDAD DE EDUCACION FISICA</h1>
+    <p id="descripcion">Los estudiantes de la modalidad de Educación Física del Colegio INEM Francisco de Paula Santander son jóvenes comprometidos con su desarrollo integral, tanto a nivel académico como físico. Estos estudiantes se destacan por su pasión por el deporte y la actividad física, lo que se refleja en su dedicación tanto dentro como fuera del aula. A lo largo de su formación, han adquirido un profundo conocimiento sobre diversas disciplinas deportivas, la importancia de mantener un estilo de vida saludable y el impacto positivo que el ejercicio tiene en el bienestar general.
+
+Además de su formación práctica en deportes, estos estudiantes han sido formados en teoría y pedagogía de la educación física, lo que les permite comprender los fundamentos científicos detrás de la actividad física y cómo aplicarlos en contextos educativos. Han desarrollado habilidades en liderazgo, trabajo en equipo y resolución de problemas, preparándolos para asumir roles activos en la promoción de la salud y el deporte en sus comunidades.
+
+Su experiencia en la modalidad de Educación Física los ha dotado de una visión holística de la importancia del ejercicio en la vida cotidiana, así como de las competencias necesarias para guiar a otros en el camino hacia una vida activa y saludable. Están preparados para enfrentar los desafíos del mundo académico y profesional, llevando consigo los valores de disciplina, perseverancia y respeto que han cultivado a lo largo de su educación en el Colegio INEM Francisco de Paula Santander.</p>	
+    <div id="contenedor-1"></div>
+    <p id="descripcion2">su experiencia en el Colegio INEM Francisco de Paula Santander les ha proporcionado una perspectiva enriquecedora sobre el papel que el deporte y la actividad física juegan en el desarrollo personal y comunitario. Con una visión clara y metas definidas, están preparados para enfrentar nuevos desafíos, ya sea en la continuación de sus estudios, en su futuro profesional o en la contribución a sus comunidades, siempre con el objetivo de fomentar una vida activa y saludable.</p>	
+    <div id="contenedor-2">
+        <div id="contenedor-3"></div>
+        <div id="contenedor-4"></div>
+        <div id="contenedor-5"></div>
+    </div>
+
+<!-- Burbuja de contacto -->
+    <div class="burbuja-contacto" id="burbuja-contacto" onclick="toggleForm()">
+        <img src="./img/co.png" alt="Icono de contacto">
+    </div>
+
+    <!-- Formulario emergente -->
+    <div class="formulario-contacto" id="formulario-contacto">
+        <form action="enviar.php" method="POST">
+            <h2>Contáctanos</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <script>
+        function toggleForm() {
+            var formulario = document.getElementById("formulario-contacto");
+            formulario.classList.toggle("activo");
+        }
+    </script>
+
+</body>
+</html>

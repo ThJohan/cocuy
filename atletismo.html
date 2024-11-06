@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Educación Física</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/iconos/ico4.ico">
+</head>
+<body>
+    <header>
+	<nav id="menu">
+           <ul id="lista-menu">
+             <a href="index.html" class="enlace-menu"><li class="menu-item">Inicio</li></a>
+	     <a href="campamento.html" class="enlace-menu"><li class="menu-item">Campamento</li></a>
+	     <a href="recreacion.html" class="enlace-menu"><li class="menu-item">Recreación</li></a>
+	     <a href="atletismo.html" class="enlace-menu"><li class="menu-item">Atletismo</li></a>
+             
+             </ul>
+        </nav>
+    </header>
+    <h1 id="titulo4">ATLETISMO</h1>
+    <p id="descripcion">La materia de Atletismo dentro de la modalidad de Educación Física del grado 11 del Colegio INEM Francisco de Paula Santander está diseñada para proporcionar a los estudiantes una comprensión integral de las disciplinas atléticas y sus beneficios tanto a nivel físico como mental. A lo largo del curso, los estudiantes exploran las diversas modalidades del atletismo, que incluyen carreras de velocidad, medio fondo y fondo, saltos, lanzamientos y relevos.
+
+El curso no solo se centra en la práctica y perfeccionamiento de las técnicas específicas de cada disciplina, sino que también abarca aspectos teóricos fundamentales, como la fisiología del ejercicio, la biomecánica del movimiento y la importancia de la nutrición en el rendimiento deportivo. Los estudiantes aprenden a evaluar su propio rendimiento y a diseñar programas de entrenamiento personalizados que optimizan sus habilidades y capacidades.
+
+Además, la materia fomenta valores como la disciplina, la perseverancia y la superación personal. Se pone un fuerte énfasis en el trabajo en equipo y el espíritu de competencia sana, ayudando a los estudiantes a desarrollar un sentido de camaradería y respeto mutuo, tanto en la victoria como en la derrota.
+
+El curso de Atletismo también incluye la historia y evolución de este deporte, destacando su importancia en eventos internacionales como los Juegos Olímpicos, y cómo ha influido en la cultura y sociedad a lo largo del tiempo. Al final del curso, los estudiantes no solo habrán mejorado su condición física y habilidades deportivas, sino que también habrán adquirido un profundo aprecio por el atletismo como un medio para el desarrollo integral y el bienestar.</p>	
+    <div id="atletismo"></div>
+
+<!-- Burbuja de contacto -->
+    <div class="burbuja-contacto" id="burbuja-contacto" onclick="toggleForm()">
+        <img src="./img/co.png" alt="Icono de contacto">
+    </div>
+
+    <!-- Formulario emergente -->
+    <div class="formulario-contacto" id="formulario-contacto">
+        <form action="enviar.php" method="POST">
+            <h2>Contáctanos</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <script>
+        function toggleForm() {
+            var formulario = document.getElementById("formulario-contacto");
+            formulario.classList.toggle("activo");
+        }
+    </script>
+
+</body>
+</html>

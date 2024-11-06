@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Educación Física</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/iconos/ico3.ico">
+</head>
+<body>
+    <header>
+	<nav id="menu">
+           <ul id="lista-menu">
+             <a href="index.html" class="enlace-menu"><li class="menu-item">Inicio</li></a>
+	     <a href="campamento.html" class="enlace-menu"><li class="menu-item">Campamento</li></a>
+	     <a href="recreacion.html" class="enlace-menu"><li class="menu-item">Recreación</li></a>
+	     <a href="atletismo.html" class="enlace-menu"><li class="menu-item">Atletismo</li></a>
+             	
+           </ul>
+        </nav>
+    </header>
+    <h1 id="titulo3">RECREACION</h1>
+    <p id="descripcion4">La materia de Recreación dentro de la modalidad de Educación Física del grado 11 en el Colegio INEM Francisco de Paula Santander está diseñada para ofrecer a los estudiantes una comprensión profunda del papel fundamental que juega la recreación en el bienestar individual y social. Este curso se centra en el estudio y la práctica de actividades recreativas que promueven la salud, el desarrollo social y la integración comunitaria.
+
+Los estudiantes exploran diferentes tipos de actividades recreativas, desde juegos tradicionales y actividades al aire libre hasta dinámicas grupales y eventos culturales, con un enfoque en cómo estas actividades pueden ser utilizadas para fomentar la cohesión social, aliviar el estrés y mejorar la calidad de vida de las personas. A lo largo de la materia, se les enseña a diseñar, planificar y ejecutar programas de recreación que sean inclusivos y accesibles para todos, considerando las diversas necesidades y características de las comunidades en las que viven.
+
+Además, la materia de Recreación también abarca aspectos teóricos, como la historia y la evolución de la recreación, la psicología del ocio, y las técnicas para liderar y motivar a grupos en actividades recreativas. Los estudiantes aprenden a valorar la recreación no solo como una forma de entretenimiento, sino como una herramienta vital para el desarrollo integral de los individuos y las comunidades, preparándolos para ser promotores del bienestar y líderes en la creación de entornos recreativos positivos.</p>	
+    <div id="recreacion"></div>
+<div id="contenedor-2">
+        <div id="contenedor-6"></div>
+        <div id="contenedor-7"></div>
+        <div id="contenedor-8"></div>
+    </div>
+
+<!-- Burbuja de contacto -->
+    <div class="burbuja-contacto" id="burbuja-contacto" onclick="toggleForm()">
+        <img src="./img/co.png" alt="Icono de contacto">
+    </div>
+
+    <!-- Formulario emergente -->
+    <div class="formulario-contacto" id="formulario-contacto">
+        <form action="enviar.php" method="POST">
+            <h2>Contáctanos</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <script>
+        function toggleForm() {
+            var formulario = document.getElementById("formulario-contacto");
+            formulario.classList.toggle("activo");
+        }
+    </script>
+
+</body>
+</html>
